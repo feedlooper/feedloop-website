@@ -1,120 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FeedLoop | Turning Waste into Protein</title>
-  <meta name="description" content="FeedLoop converts industrial organic waste into high-performance insect protein and fertilizer—closing the loop for resilient food systems." />
+  <title>FeedLoop | Engineering the Future of Protein</title>
+  <meta name="description" content="FeedLoop diverts industrial pre-consumer organic waste and converts it into high-performance animal feed and fertilizers." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html">
-        <div class="logo"></div>
-        <span>FeedLoop</span>
+      <a class="brand" href="index.html" aria-label="FeedLoop home">
+        <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
+        <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
       </a>
-      <nav class="nav-links">
-        <a href="about.html">About</a>
-        <a href="technology.html">Technology</a>
-        <a href="partners.html">Partners</a>
-        <a href="contact.html" class="cta">Contact</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about-us.html">About Us</a>
+        <a data-nav href="team.html">Meet the Team</a>
+        <a class="btn btn-primary" href="mailto:info@feedloop.bio">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="kicker">CIRCULAR BIOINFRASTRUCTURE</div>
-        <h1 class="h1">Turning industrial organic waste into <span style="color:var(--green-dark)">high-performance protein</span>.</h1>
-        <p class="sub">FeedLoop diverts pre-consumer organic waste from disposal and converts it into premium Black Soldier Fly (BSF) protein, oils, and organic fertilizer—unlocking a scalable, low-carbon alternative to imported feed inputs.</p>
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="kicker">Waste → Protein → Local Supply</div>
+          <h1 class="h1">Engineering the future of protein.</h1>
+          <p class="lead">
+            FeedLoop diverts industrial pre-consumer organic waste from landfills and converts it into
+            high-performance animal feed and fertilizers—building a domestic supply solution for BC.
+          </p>
 
-        <div class="hero-actions">
-          <a class="cta" href="contact.html">Partner with us</a>
-          <a class="secondary" href="about.html">Learn what we’re building</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="about-us.html">How it works</a>
+            <a class="btn" href="team.html">Meet the team</a>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="split">
+            <div>
+              <span class="badge">Financial Engine</span>
+              <p class="lead" style="margin-top:10px;">
+                Built for “negative COGS”: we’re paid to accept raw materials (gate fees), covering fixed overhead before production.
+              </p>
+            </div>
+            <div>
+              <span class="badge">Market Driver</span>
+              <p class="lead" style="margin-top:10px;">
+                Closing the nutrition gap across livestock feed, aquaculture, pet food, and fertilizers with domestic supply.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="metrics">
-          <div class="metric"><b>Waste → Value</b><span>Gate fee + product revenue</span></div>
-          <div class="metric"><b>Modular</b><span>Repeatable units, fast deployment</span></div>
-          <div class="metric"><b>Local supply</b><span>Resilient domestic protein</span></div>
+        <div class="hero-card">
+          <div class="stats">
+            <div class="stat">
+              <div class="label">Gate fees</div>
+              <div class="value">~$100 / tonne</div>
+              <div class="note">Paid to accept industrial organics.</div>
+            </div>
+            <div class="stat">
+              <div class="label">Tipping fees</div>
+              <div class="value">$150+ / tonne</div>
+              <div class="note">A major pain point for processors.</div>
+            </div>
+            <div class="stat">
+              <div class="label">BC Carbon Tax (2026)</div>
+              <div class="value">$125 / tonne</div>
+              <div class="note">Adds pressure to legacy disposal routes.</div>
+            </div>
+            <div class="stat">
+              <div class="label">Carbon credit upside</div>
+              <div class="value">$40k–$60k / yr</div>
+              <div class="note">Potential tradeable credits from diversion.</div>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <p class="small">
+            Note: Values shown reflect your internal project deck assumptions and will vary by site and contracts.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="h2">Why FeedLoop</h2>
-        <p>We’re building the missing link between waste producers and protein demand: a modern “loop” where organics become a valuable input, not a liability.</p>
-
-        <div class="grid3">
+        <h2 style="margin:0 0 14px; font-size:26px;">What we do</h2>
+        <div class="grid">
           <div class="card">
-            <span class="badge">Problem</span>
-            <h3>Organics are expensive to dispose</h3>
-            <p>Industrial organic by-products often incur hauling, processing, and compliance costs. We make diversion simple and measurable.</p>
+            <h3>1) Secure feedstock</h3>
+            <p>We accept pre-consumer organics such as fruit & vegetable culls, brewery grains, and bakery waste.</p>
           </div>
           <div class="card">
-            <span class="badge">Solution</span>
-            <h3>Bioconversion at industrial scale</h3>
-            <p>Our BSF system converts organics into protein meal, oils, and frass fertilizer with rapid cycle times and strong nutrient recovery.</p>
+            <h3>2) Automated bio-conversion</h3>
+            <p>We use automated EntoReactors to grow Black Soldier Fly larvae on optimized blends.</p>
           </div>
           <div class="card">
-            <span class="badge">Edge</span>
-            <h3>Optimization + repeatability</h3>
-            <p>We design for consistent yields, reliable uptime, and data-driven operations—so sites can scale like infrastructure, not farms.</p>
+            <h3>3) Multiple revenue outputs</h3>
+            <p>Whole dried BSF, organic frass, further processing into protein meal & LipidX oil, plus tradable carbon credits.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" style="background:var(--mint); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <section class="section-tight">
       <div class="container">
-        <h2 class="h2">What we produce</h2>
-        <div class="grid3">
-          <div class="card">
-            <h3>Protein meal</h3>
-            <p>High-quality insect protein for aquaculture, pet nutrition, and specialty livestock applications.</p>
-          </div>
-          <div class="card">
-            <h3>Oils</h3>
-            <p>Functional lipids (including lauric acid) that can support formulation performance and animal health outcomes.</p>
-          </div>
-          <div class="card">
-            <h3>Organic fertilizer</h3>
-            <p>Frass-based soil amendment that returns nutrients to local agriculture—closing the nutrient loop.</p>
-          </div>
+        <div class="hero-card">
+          <h2 style="margin:0 0 10px; font-size:24px;">Our vision</h2>
+          <p class="lead" style="margin:0;">
+            To become Canada’s largest integrated animal feed producer and organic waste processor by 2035, securing national food supply chains.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="h2">Quick links</h2>
-        <div class="grid2">
+        <div class="split">
           <div class="card">
-            <h3>For investors & competitions</h3>
-            <p>Our about page summarizes the problem, the model, and why this becomes scalable infrastructure.</p>
-            <a class="cta" href="about.html">Read the story</a>
+            <h3>Why now</h3>
+            <p>
+              Industrial processors face rising disposal costs and increasing regulatory pressure on organics. FeedLoop turns that liability into
+              a local protein and fertilizer supply engine.
+            </p>
           </div>
           <div class="card">
-            <h3>For partners</h3>
-            <p>If you generate organics (or buy protein), we’ll map fit, volumes, and a pilot pathway.</p>
-            <a class="cta" href="partners.html">See partner options</a>
+            <h3>Work with us</h3>
+            <p>We partner with food processors, farms, and brands seeking resilient domestic supply and measurable sustainability outcomes.</p>
+            <div style="margin-top:14px;">
+              <a class="btn btn-primary" href="mailto:info@feedloop.bio">Investor / Partner Contact</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <small>© <span id="y"></span> FeedLoop. Built to close the loop.</small>
+    <div class="container footer-inner">
+      <div>
+        <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
+        <div class="small">Waste to Protein & Organic Solutions</div>
+      </div>
+      <div class="small">© <span id="y"></span> FeedLoop. All rights reserved.</div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
