@@ -1,146 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Technology | FeedLoop</title>
-  <meta name="description" content="FeedLoop uses automated Black Soldier Fly bioconversion to convert organic waste into protein and fertilizer products." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
-      <div class="brand-name">
-        <span class="feed">Feed</span><span class="loop">Loop</span>
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
+          <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="technology.html" class="active">Technology</a>
+          <a href="partners.html">Partners</a>
+          <a href="partners.html#contact" class="nav-cta">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
       </div>
-    </a>
 
-    <nav class="nav-links">
-      <a data-nav href="index.html">Home</a>
-      <a data-nav href="about-us.html">About Us</a>
-      <a data-nav href="technology.html">Technology</a>
-      <a data-nav href="partners.html">Partners</a>
-      <a class="btn btn-primary" href="mailto:info@feedloop.bio">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
+      <div class="mobile-panel" id="mobilePanel">
+        <div class="mobile-links">
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="technology.html" class="active">Technology</a>
+          <a href="partners.html">Partners</a>
+          <a href="partners.html#contact" class="nav-cta">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-card">
-        <div class="kicker">Our Technology</div>
-        <h1 class="h1">Industrial bioconversion at scale.</h1>
-        <p class="lead">
-          FeedLoop deploys automated Black Soldier Fly (BSF) bioconversion systems
-          to transform pre-consumer organic waste into high-performance protein
-          and organic soil inputs.
-        </p>
-        <p class="lead">
-          Our model integrates structured feedstock contracts, automation, and
-          energy-efficient process design to create scalable circular infrastructure.
-        </p>
-      </div>
-
-      <div class="hero-card">
-        <h2 style="margin:0 0 12px;">Process Overview</h2>
-        <div class="grid" style="grid-template-columns:1fr;">
-          <div class="card" style="box-shadow:none;">
-            <h3>1. Waste Intake</h3>
-            <p>Consistent, clean pre-consumer organic streams are secured through long-term supply agreements.</p>
-          </div>
-          <div class="card" style="box-shadow:none;">
-            <h3>2. Bioconversion</h3>
-            <p>BSF larvae convert organics into high-protein biomass through rapid growth cycles.</p>
-          </div>
-          <div class="card" style="box-shadow:none;">
-            <h3>3. Processing & Output</h3>
-            <p>Outputs include insect protein meal, oil fractions, and organic frass fertilizer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="container">
+      <div class="hero-grid">
 
-      <h2 style="margin:0 0 18px; font-size:26px;">Why Our Model Works</h2>
-
-      <div class="grid">
-
-        <div class="card">
-          <h3>Negative Input Economics</h3>
-          <p>
-            Gate-fee aligned waste streams create a cost-advantaged input structure,
-            improving margin resilience.
+        <div class="hero-card">
+          <div class="kicker">Our Technology</div>
+          <h1 class="h1">Industrial bioconversion<br/>at scale.</h1>
+          <p class="lead">
+            FeedLoop deploys automated Black Soldier Fly (BSF) bioconversion systems to transform pre-consumer organic waste
+            into high-performance protein and organic soil inputs.
           </p>
+
+          <div class="subhead">Designed for repeatability</div>
+          <p class="body">
+            Our model integrates structured feedstock contracts, automation, and energy-efficient process design to create
+            scalable circular infrastructure.
+          </p>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+            <a class="btn btn-primary" href="partners.html">Partner with us</a>
+            <a class="btn btn-ghost" href="partners.html#contact">Contact</a>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Automated Infrastructure</h3>
-          <p>
-            Process automation reduces labor intensity and increases consistency
-            across modular facility deployments.
-          </p>
-        </div>
+        <div class="hero-card">
+          <div class="kicker">Process Overview</div>
 
-        <div class="card">
-          <h3>Multi-Revenue Outputs</h3>
-          <p>
-            Protein meal, oil, and frass fertilizer diversify revenue streams
-            and reduce single-market exposure.
-          </p>
-        </div>
+          <div class="stat-list">
+            <div class="stat-row">
+              <div class="stat-label">1. Waste Intake</div>
+              <div class="stat-value">Clean organics, consistent supply</div>
+              <div class="stat-note">Secured through long-term agreements and quality screens.</div>
+            </div>
 
-        <div class="card">
-          <h3>Energy Efficiency</h3>
-          <p>
-            Integrated thermal management and process flow optimization
-            improve system-level performance.
+            <div class="stat-row">
+              <div class="stat-label">2. Bioconversion</div>
+              <div class="stat-value">Rapid growth cycles</div>
+              <div class="stat-note">BSF larvae convert organics into nutrient-dense biomass.</div>
+            </div>
+
+            <div class="stat-row">
+              <div class="stat-label">3. Processing & Output</div>
+              <div class="stat-value">Protein, oil, fertilizer</div>
+              <div class="stat-note">Outputs include protein meal, oil fractions, and frass fertilizer.</div>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+          <p class="small">
+            Our tech pathway is built for modular scaling, automation, and consistent output quality.
           </p>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <section class="section-tight">
-    <div class="container">
-      <div class="hero-card">
-        <h2 style="margin:0 0 12px;">Built for Canadian Agriculture</h2>
-        <p class="lead">
-          FeedLoop’s systems are designed for integration into existing
-          agricultural and food processing ecosystems — strengthening
-          domestic feed resilience while reducing landfill dependence.
-        </p>
-        <a class="btn btn-primary" href="partners.html">Explore Partnerships</a>
-      </div>
+  <footer class="footer">
+    <div class="container small">
+      © FeedLoop — Waste to Protein & Organic Solutions
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <div class="brand-name">
-        <span class="feed">Feed</span><span class="loop">Loop</span>
-      </div>
-      <div class="small">Waste to Protein & Organic Solutions</div>
-    </div>
-    <div class="small">© <span id="y"></span> FeedLoop</div>
-  </div>
-</footer>
-
-<script>
-document.getElementById("y").textContent = new Date().getFullYear();
-</script>
-
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('mobilePanel');
+    btn?.addEventListener('click', () => {
+      panel.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
