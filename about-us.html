@@ -1,167 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | FeedLoop</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
-      <div class="brand-name">
-        <span class="feed">Feed</span><span class="loop">Loop</span>
+  <!-- NAV (identical on every page) -->
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
+          <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about-us.html" class="active">About Us</a>
+          <a href="technology.html">Technology</a>
+          <a href="partners.html">Partners</a>
+          <a href="partners.html#contact" class="nav-cta">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
       </div>
-    </a>
 
-    <nav class="nav-links">
-      <a data-nav href="index.html">Home</a>
-      <a data-nav href="about-us.html">About Us</a>
-      <a data-nav href="team.html">Meet the Team</a>
-      <a data-nav href="technology.html">Technology</a>
-       <a data-nav href="partners.html">Partners</a>
-      <a class="btn btn-primary" href="mailto:info@feedloop.bio">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="section">
-  <div class="container">
-
-    <!-- ABOUT INTRO -->
-    <div class="hero-card">
-      <div class="kicker">About FeedLoop</div>
-      <h1 class="h1">Building circular protein infrastructure for Canada.</h1>
-      <p class="lead">
-        FeedLoop is an integrated bio-manufacturing company focused on converting industrial
-        pre-consumer organic waste into high-performance animal feed and organic soil inputs.
-        Our model is designed around negative input costs, scalable automation, and resilient
-        domestic supply chains.
-      </p>
-      <p class="lead">
-        By aligning gate-fee economics, automated bioconversion systems, and multi-output revenue
-        streams, FeedLoop transforms waste liabilities into valuable protein and fertilizer
-        products — strengthening food security while reducing landfill dependence.
-      </p>
+      <div class="mobile-panel" id="mobilePanel">
+        <div class="mobile-links">
+          <a href="index.html">Home</a>
+          <a href="about-us.html" class="active">About Us</a>
+          <a href="technology.html">Technology</a>
+          <a href="partners.html">Partners</a>
+          <a href="partners.html#contact" class="nav-cta">Contact</a>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <div class="section-tight"></div>
-
-    <!-- MISSION SECTION -->
-    <div class="grid">
+  <section class="section">
+    <div class="container">
       <div class="card">
-        <h3>Mission</h3>
+        <div class="kicker">About FeedLoop</div>
+        <h2 style="margin:0 0 10px;">Building circular infrastructure for food systems</h2>
         <p>
-          To convert organic waste into valuable protein inputs while strengthening
-          Canada's agricultural supply chains.
+          FeedLoop diverts industrial pre-consumer organic waste and converts it into high-performance animal nutrition
+          and organic soil inputs. Our model is designed for repeatable supply, measurable diversion impact, and
+          strong unit economics.
+        </p>
+
+        <div class="hr"></div>
+
+        <div class="subhead">What we do</div>
+        <p class="body">
+          We partner with processors and farms to make diversion simple and reliable—turning organics into consistent
+          protein meal, oil fractions, and frass fertilizer.
+        </p>
+
+        <div class="subhead">Why it matters</div>
+        <p class="body">
+          BC needs domestic, resilient feed inputs and lower-cost pathways for organics diversion. We help build that
+          local supply chain while reducing landfill burden.
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="team">
+    <div class="container">
       <div class="card">
-        <h3>Approach</h3>
-        <p>
-          Automated Black Soldier Fly bioconversion, structured feedstock contracts,
-          and disciplined infrastructure deployment.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Vision</h3>
-        <p>
-          To become Canada's largest integrated organic waste processor
-          and animal feed producer by 2035.
-        </p>
+        <h2 style="margin:0 0 20px;">Leadership Team</h2>
+
+        <!-- Krit -->
+        <div class="team-row">
+          <div class="team-photo">
+            <img src="assets/krit.jpg" alt="Krit Unmole" />
+          </div>
+          <div class="team-text">
+            <h3>Krit Unmole</h3>
+            <div class="title">Co-Founder | CEO</div>
+            <p>
+              Krit is a Chemical Engineer with relentless drive and a clear long-term vision for FeedLoop.
+              He’s been researching this space for years and brings an infectious enthusiasm that rallies people around the mission.
+              Krit leads company strategy, partnerships, and execution toward a scalable circular protein platform.
+            </p>
+          </div>
+        </div>
+
+        <!-- Adbhut -->
+        <div class="team-row">
+          <div class="team-photo">
+            <img src="assets/adbhut.jpg" alt="Adbhut Mangal" />
+          </div>
+          <div class="team-text">
+            <h3>Adbhut Mangal</h3>
+            <div class="title">Co-Founder | Chief Commercial Officer</div>
+            <p>
+              Adbhut is a professional engineer with a background spanning chemical and biomedical engineering and entrepreneurship.
+              He brings strong business execution, stakeholder management, and commercial instincts to FeedLoop—bridging technical feasibility
+              with customer needs, pricing, and go-to-market strategy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Yiming -->
+        <div class="team-row" style="margin-bottom:0;">
+          <div class="team-photo">
+            <img src="assets/yiming.jpg" alt="Yiming Zhong" />
+          </div>
+          <div class="team-text">
+            <h3>Yiming Zhong</h3>
+            <div class="title">Co-Founder | COO</div>
+            <p>
+              Yiming is a Civil Engineer-in-Training known for her disciplined execution, strong communication, and calm problem-solving.
+              She’s highly motivated, detail-oriented, and focused on building reliable systems—helping translate big goals into operational reality.
+              Yiming drives coordination, planning, and day-to-day operational structure as FeedLoop scales.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <div class="section"></div>
-
-    <!-- TEAM SECTION -->
-    <h2 style="font-size:28px; margin-bottom:20px;">Leadership Team</h2>
-
-    <!-- KRIT -->
-    <div class="team-row">
-      <div class="team-photo">
-        <!-- Replace with actual image -->
-        <img src="assets/krit.jpeg" alt="Krit Unmole">
-      </div>
-      <div class="team-text">
-        <h3>Krit Unmole</h3>
-        <div class="title">Co-Founder | Chief Executive Officer</div>
-        <p>
-          Krit holds a degree in Chemical Engineering and has spent years refining
-          the FeedLoop concept through research, industry engagement, and technical development.
-          He brings deep conviction in building resilient circular infrastructure.
-        </p>
-        <p>
-          As CEO, Krit leads strategic direction, engineering oversight, and company growth.
-          Known for his infectious energy and ability to rally teams around a shared vision,
-          he drives FeedLoop forward with both technical clarity and entrepreneurial intensity.
-        </p>
-      </div>
+  <footer class="footer">
+    <div class="container small">
+      © FeedLoop — Waste to Protein & Organic Solutions
     </div>
-    
-<!-- YIMING -->
-    <div class="team-row">
-      <div class="team-photo">
-        <img src="assets/yiming.jpeg" alt="Yiming Zhong">
-      </div>
-      <div class="team-text">
-        <h3>Yiming Zhong</h3>
-        <div class="title">Co-Founder | Chief Operating Officer</div>
-        <p>
-          Yiming holds a degree in Civil Engineering and brings strong experience
-          in infrastructure coordination and operational systems thinking.
-        </p>
-        <p>
-          As COO, she oversees operational planning, project coordination, and execution
-          discipline across FeedLoop’s facilities. Her structured approach ensures
-          scalable processes, cross-functional alignment, and consistent performance
-          as the company grows.
-        </p>
-      </div>
-    </div>
-    
-    <!-- ADBHUT -->
-    <div class="team-row">
-      <div class="team-photo">
-        <img src="assets/adbhut.jpeg" alt="Adbhut Mangal">
-      </div>
-      <div class="team-text">
-        <h3>Adbhut Mangal</h3>
-        <div class="title">Co-Founder | Chief Commercial Officer</div>
-        <p>
-          Adbhut is a Professional Engineer with a background in chemical and biomedical
-          engineering and formal training in entrepreneurship. He has led multi-million-dollar
-          infrastructure projects and brings a strong understanding of systems economics.
-        </p>
-        <p>
-          At FeedLoop, Adbhut leads commercial strategy, partnerships, and revenue development —
-          securing feedstock agreements, structuring offtake relationships, and aligning
-          financial models with scalable deployment.
-        </p>
-      </div>
-    </div>
+  </footer>
 
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <div class="brand-name">
-        <span class="feed">Feed</span><span class="loop">Loop</span>
-      </div>
-      <div class="small">Waste to Protein & Organic Solutions</div>
-    </div>
-    <div class="small">© <span id="y"></span> FeedLoop</div>
-  </div>
-</footer>
-
-<script>
-document.getElementById("y").textContent = new Date().getFullYear();
-</script>
-
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('mobilePanel');
+    btn?.addEventListener('click', () => {
+      panel.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
