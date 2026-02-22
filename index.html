@@ -1,164 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FeedLoop | Engineering the Future of Protein</title>
-  <meta name="description" content="FeedLoop diverts industrial pre-consumer organic waste and converts it into high-performance animal feed and fertilizers." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FeedLoop | Waste to Protein</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- NAV -->
   <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="FeedLoop home">
-        <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
-        <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
-      </a>
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
+          <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
+        </a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a data-nav href="index.html">Home</a>
-        <a data-nav href="about-us.html">About Us</a>
-        <a data-nav href="team.html">Meet the Team</a>
-        <a data-nav href="technology.html">Technology</a>
-        <a data-nav href="partners.html">Partners</a>
-        <a class="btn btn-primary" href="mailto:info@feedloop.bio">Contact</a>
-      </nav>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="technology.html">Technology</a>
+          <a href="partners.html">Partners</a>
+          <a href="partners.html#contact" class="nav-cta">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel">
+        <div class="mobile-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="technology.html">Technology</a>
+          <a href="partners.html">Partners</a>
+          <a href="partners.html#contact" class="nav-cta">Contact</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
+  <!-- HERO -->
+  <main class="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left -->
         <div class="hero-card">
           <div class="kicker">Waste → Protein → Local Supply</div>
-          <h1 class="h1">Engineering the future of protein.</h1>
+          <h1 class="h1">Engineering the future<br/>of protein.</h1>
           <p class="lead">
             FeedLoop diverts industrial pre-consumer organic waste from landfills and converts it into
-            high-performance animal feed and fertilizers—building a domestic supply solution for BC.
+            high-performance animal feed and organic fertilizers—building a domestic supply solution for BC.
           </p>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="about-us.html">How it works</a>
-            <a class="btn" href="team.html">Meet the team</a>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px;">
+            <a class="btn btn-primary" href="technology.html">How it works</a>
+            <a class="btn btn-ghost" href="about-us.html#team">Meet the team</a>
           </div>
 
           <div class="hr"></div>
 
-          <div class="split">
-            <div>
-              <span class="badge">Financial Engine</span>
-              <p class="lead" style="margin-top:10px;">
-                Built for “negative COGS”: we’re paid to accept raw materials (gate fees), covering fixed overhead before production.
-              </p>
-            </div>
-            <div>
-              <span class="badge">Market Driver</span>
-              <p class="lead" style="margin-top:10px;">
-                Closing the nutrition gap across livestock feed, aquaculture, pet food, and fertilizers with domestic supply.
-              </p>
-            </div>
-          </div>
+          <div class="subhead">Financial Engine</div>
+          <p class="body">
+            Built for “negative COGS”: we’re paid to accept raw materials (gate fees),
+            covering fixed overhead before production.
+          </p>
+
+          <div class="subhead">Market Driver</div>
+          <p class="body">
+            Closing the nutrition gap across livestock feed, aquaculture, pet food, and fertilizers with
+            consistent domestic supply.
+          </p>
         </div>
 
+        <!-- Right (fixed) -->
         <div class="hero-card">
-          <div class="stats">
-            <div class="stat">
-              <div class="label">Gate fees</div>
-              <div class="value">~$100 / tonne</div>
-              <div class="note">Paid to accept industrial organics.</div>
+          <div class="kicker">Key Economics</div>
+          <h2 style="margin:0 0 12px; font-size:22px;">Why the model works</h2>
+
+          <div class="stat-list">
+            <div class="stat-row">
+              <div class="stat-label">Gate fees</div>
+              <div class="stat-value">~$100 / tonne</div>
+              <div class="stat-note">We’re paid to accept industrial organics.</div>
             </div>
-            <div class="stat">
-              <div class="label">Tipping fees</div>
-              <div class="value">$150+ / tonne</div>
-              <div class="note">A major pain point for processors.</div>
+
+            <div class="stat-row">
+              <div class="stat-label">Tipping fees (status quo)</div>
+              <div class="stat-value">$150+ / tonne</div>
+              <div class="stat-note">A major pain point for processors.</div>
             </div>
-            <div class="stat">
-              <div class="label">BC Carbon Tax (2026)</div>
-              <div class="value">$125 / tonne</div>
-              <div class="note">Adds pressure to legacy disposal routes.</div>
+
+            <div class="stat-row">
+              <div class="stat-label">BC carbon tax (2026)</div>
+              <div class="stat-value">$125 / tonne</div>
+              <div class="stat-note">Adds pressure to legacy disposal routes.</div>
             </div>
-            <div class="stat">
-              <div class="label">Carbon credit upside</div>
-              <div class="value">$40k–$60k / yr</div>
-              <div class="note">Potential tradeable credits from diversion.</div>
+
+            <div class="stat-row">
+              <div class="stat-label">Carbon credit upside</div>
+              <div class="stat-value">$40k–$60k / yr</div>
+              <div class="stat-note">Potential tradeable credits from diversion.</div>
             </div>
           </div>
 
           <div class="hr"></div>
-
           <p class="small">
-            Note: Values shown reflect your internal project deck assumptions and will vary by site and contracts.
+            Note: Values reflect internal assumptions and vary by site and contracts.
           </p>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 style="margin:0 0 14px; font-size:26px;">What we do</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>1) Secure feedstock</h3>
-            <p>We accept pre-consumer organics such as fruit & vegetable culls, brewery grains, and bakery waste.</p>
-          </div>
-          <div class="card">
-            <h3>2) Automated bio-conversion</h3>
-            <p>We use automated EntoReactors to grow Black Soldier Fly larvae on optimized blends.</p>
-          </div>
-          <div class="card">
-            <h3>3) Multiple revenue outputs</h3>
-            <p>Whole dried BSF, organic frass, further processing into protein meal & LipidX oil, plus tradable carbon credits.</p>
-          </div>
-        </div>
       </div>
-    </section>
-
-    <section class="section-tight">
-      <div class="container">
-        <div class="hero-card">
-          <h2 style="margin:0 0 10px; font-size:24px;">Our vision</h2>
-          <p class="lead" style="margin:0;">
-            To become Canada’s largest integrated animal feed producer and organic waste processor by 2035, securing national food supply chains.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="split">
-          <div class="card">
-            <h3>Why now</h3>
-            <p>
-              Industrial processors face rising disposal costs and increasing regulatory pressure on organics. FeedLoop turns that liability into
-              a local protein and fertilizer supply engine.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Work with us</h3>
-            <p>We partner with food processors, farms, and brands seeking resilient domestic supply and measurable sustainability outcomes.</p>
-            <div style="margin-top:14px;">
-              <a class="btn btn-primary" href="mailto:info@feedloop.bio">Investor / Partner Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
-        <div class="small">Waste to Protein & Organic Solutions</div>
+  <!-- LOWER SECTIONS (fix spacing + make it feel fuller) -->
+  <section class="section-tight">
+    <div class="container grid-2">
+
+      <div class="card">
+        <h2>Our vision</h2>
+        <p>
+          To become Canada’s largest integrated animal feed producer and organic waste processor by 2035,
+          securing resilient national food supply chains.
+        </p>
       </div>
-      <div class="small">© <span id="y"></span> FeedLoop. All rights reserved.</div>
+
+      <div class="card">
+        <h2>Why now</h2>
+        <p>
+          Industrial processors face rising disposal costs and increasing regulatory pressure on organics.
+          FeedLoop turns that liability into a local protein and fertilizer supply engine.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="card">
+        <h2>Work with us</h2>
+        <p style="margin-bottom:16px;">
+          We partner with food processors, farms, and brands seeking resilient domestic supply and measurable sustainability outcomes.
+        </p>
+        <a class="btn btn-primary" href="partners.html#contact">Investor / Partner Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container small">
+      © FeedLoop — Waste to Protein & Organic Solutions
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('mobilePanel');
+    btn?.addEventListener('click', () => {
+      panel.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
