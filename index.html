@@ -1,4 +1,3 @@
-<!-- FILE: index.html  (replace the entire file with this) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +12,12 @@
   <header class="nav">
     <div class="container">
       <div class="nav-inner">
-        <a class="brand" href="index.html" aria-label="FeedLoop home">
-          <img class="brand-logo" src="assets/feedloop-logo.png" alt="FeedLoop logo" />
-          <div class="brand-name">
-            <span class="feed">Feed</span><span class="loop">Loop</span>
-          </div>
+        <a class="brand" href="index.html">
+          <img src="assets/feedloop-logo.png" alt="FeedLoop logo" />
+          <div class="brand-name"><span class="feed">Feed</span><span class="loop">Loop</span></div>
         </a>
 
-        <nav class="nav-links" aria-label="Primary navigation">
+        <nav class="nav-links">
           <a href="index.html" class="active">Home</a>
           <a href="about-us.html">About Us</a>
           <a href="technology.html">Technology</a>
@@ -28,9 +25,7 @@
           <a href="partners.html#contact" class="nav-cta">Contact</a>
         </nav>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
-          Menu
-        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
       </div>
 
       <div class="mobile-panel" id="mobilePanel">
@@ -51,17 +46,15 @@
       <div class="hero-grid">
 
         <!-- Left -->
-        <div class="hero-card hero-card--primary">
+        <div class="hero-card">
           <div class="kicker">Waste → Protein → Local Supply</div>
-
           <h1 class="h1">Engineering the future<br/>of protein.</h1>
-
           <p class="lead">
             FeedLoop diverts industrial pre-consumer organic waste from landfills and converts it into
             high-performance animal feed and organic fertilizers—building a domestic supply solution for BC.
           </p>
 
-          <div class="btn-row">
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px;">
             <a class="btn btn-primary" href="technology.html">How it works</a>
             <a class="btn btn-ghost" href="about-us.html#team">Meet the team</a>
           </div>
@@ -80,47 +73,38 @@
           </p>
         </div>
 
-        <!-- Right -->
-        <div class="hero-card hero-card--econ">
+        <!-- Right (fixed) -->
+        <div class="hero-card">
           <div class="kicker">Key Economics</div>
-          <h2 class="h2">Why the model works</h2>
+          <h2 style="margin:0 0 12px; font-size:22px;">Why the model works</h2>
 
           <div class="stat-list">
             <div class="stat-row">
-              <div class="stat-top">
-                <div class="stat-label">Gate fees</div>
-                <div class="stat-value">~$100 / tonne</div>
-              </div>
+              <div class="stat-label">Gate fees</div>
+              <div class="stat-value">~$100 / tonne</div>
               <div class="stat-note">We’re paid to accept industrial organics.</div>
             </div>
 
             <div class="stat-row">
-              <div class="stat-top">
-                <div class="stat-label">Tipping fees (status quo)</div>
-                <div class="stat-value">$150+ / tonne</div>
-              </div>
+              <div class="stat-label">Tipping fees (status quo)</div>
+              <div class="stat-value">$150+ / tonne</div>
               <div class="stat-note">A major pain point for processors.</div>
             </div>
 
             <div class="stat-row">
-              <div class="stat-top">
-                <div class="stat-label">BC carbon tax (2026)</div>
-                <div class="stat-value">$125 / tonne</div>
-              </div>
+              <div class="stat-label">BC carbon tax (2026)</div>
+              <div class="stat-value">$125 / tonne</div>
               <div class="stat-note">Adds pressure to legacy disposal routes.</div>
             </div>
 
             <div class="stat-row">
-              <div class="stat-top">
-                <div class="stat-label">Carbon credit upside</div>
-                <div class="stat-value">$40k–$60k / yr</div>
-              </div>
+              <div class="stat-label">Carbon credit upside</div>
+              <div class="stat-value">$40k–$60k / yr</div>
               <div class="stat-note">Potential tradeable credits from diversion.</div>
             </div>
           </div>
 
           <div class="hr"></div>
-
           <p class="small">
             Note: Values reflect internal assumptions and vary by site and contracts.
           </p>
@@ -130,21 +114,21 @@
     </div>
   </main>
 
-  <!-- LOWER SECTIONS -->
-  <section class="section">
+  <!-- LOWER SECTIONS (fix spacing + make it feel fuller) -->
+  <section class="section-tight">
     <div class="container grid-2">
 
       <div class="card">
-        <h2 class="h3">Our vision</h2>
-        <p class="body">
+        <h2>Our vision</h2>
+        <p>
           To become Canada’s largest integrated animal feed producer and organic waste processor by 2035,
           securing resilient national food supply chains.
         </p>
       </div>
 
       <div class="card">
-        <h2 class="h3">Why now</h2>
-        <p class="body">
+        <h2>Why now</h2>
+        <p>
           Industrial processors face rising disposal costs and increasing regulatory pressure on organics.
           FeedLoop turns that liability into a local protein and fertilizer supply engine.
         </p>
@@ -153,18 +137,14 @@
     </div>
   </section>
 
-  <section class="section section-last">
+  <section class="section-tight">
     <div class="container">
-      <div class="card card-cta">
-        <div class="cta-left">
-          <h2 class="h3">Work with us</h2>
-          <p class="body">
-            We partner with food processors, farms, and brands seeking resilient domestic supply and measurable sustainability outcomes.
-          </p>
-        </div>
-        <div class="cta-right">
-          <a class="btn btn-primary" href="partners.html#contact">Investor / Partner Contact</a>
-        </div>
+      <div class="card">
+        <h2>Work with us</h2>
+        <p style="margin-bottom:16px;">
+          We partner with food processors, farms, and brands seeking resilient domestic supply and measurable sustainability outcomes.
+        </p>
+        <a class="btn btn-primary" href="partners.html#contact">Investor / Partner Contact</a>
       </div>
     </div>
   </section>
@@ -178,29 +158,8 @@
   <script>
     const btn = document.getElementById('menuBtn');
     const panel = document.getElementById('mobilePanel');
-
-    function closeMobile() {
-      panel?.classList.remove('show');
-      btn?.setAttribute('aria-expanded', 'false');
-    }
-
     btn?.addEventListener('click', () => {
       panel.classList.toggle('show');
-      btn.setAttribute('aria-expanded', panel.classList.contains('show') ? 'true' : 'false');
-    });
-
-    // Close mobile menu when a link is clicked
-    panel?.querySelectorAll('a')?.forEach(a => a.addEventListener('click', closeMobile));
-
-    // Close on outside click (mobile)
-    document.addEventListener('click', (e) => {
-      const isInside = e.target.closest('.nav-inner') || e.target.closest('#mobilePanel');
-      if (!isInside) closeMobile();
-    });
-
-    // Close on resize up to desktop
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 860) closeMobile();
     });
   </script>
 </body>
