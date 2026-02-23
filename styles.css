@@ -1,41 +1,37 @@
-/* FILE: styles.css  (replace the entire file with this) */
+/* FILE: styles.css  (replace entire file) */
 
-/* -----------------------------
-   Theme
------------------------------- */
 :root{
   --bg: #65666b;
 
-  --nav-bg: rgba(44,45,50,0.92);
-  --nav-border: rgba(255,255,255,0.10);
+  /* Dark UI layers */
+  --panel: rgba(0,0,0,0.22);
+  --panel-strong: rgba(0,0,0,0.28);
+  --border: rgba(255,255,255,0.14);
+  --border-soft: rgba(255,255,255,0.10);
 
-  --card-bg: rgba(255,255,255,0.92);
-  --card-border: rgba(0,0,0,0.08);
+  /* Text */
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.72);
+  --muted-2: rgba(255,255,255,0.62);
 
-  --text: #1f2328;
-  --muted: rgba(31,35,40,0.72);
-
+  /* Brand */
   --white: #ffffff;
-
-  --green: #63a80c;      /* FeedLoop green */
+  --green: #63a80c;
   --green-dark: #4d8f06;
 
   --radius: 22px;
-  --shadow: 0 18px 40px rgba(0,0,0,0.18);
-
+  --shadow: 0 18px 45px rgba(0,0,0,0.28);
   --container: 1100px;
 }
 
-/* -----------------------------
-   Base
------------------------------- */
+/* Base */
 *{ box-sizing: border-box; }
 html, body { height: 100%; }
 body{
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
-  color: var(--text);
   background: var(--bg);
+  color: var(--text);
 }
 
 a{ color: inherit; text-decoration: none; }
@@ -46,23 +42,20 @@ img{ max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
-/* Utility text */
 .small{
   font-size: 13px;
   line-height: 1.45;
-  color: rgba(255,255,255,0.72);
+  color: var(--muted-2);
 }
 
-/* -----------------------------
-   Nav
------------------------------- */
+/* Nav */
 .nav{
   position: sticky;
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: var(--nav-bg);
-  border-bottom: 1px solid var(--nav-border);
+  background: rgba(0,0,0,0.28);
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .nav-inner{
@@ -80,20 +73,22 @@ img{ max-width: 100%; display: block; }
   min-width: 220px;
 }
 
+/* IMPORTANT: add class="brand-logo" to your <img> (or keep it and this will apply) */
+.brand img,
 .brand-logo{
   width: 38px;
   height: 38px;
   object-fit: contain;
+  background: transparent;
 }
 
 .brand-name{
-  font-weight: 800;
+  font-weight: 850;
   font-size: 22px;
   letter-spacing: -0.2px;
   line-height: 1;
 }
-
-.brand-name .feed{ color: var(--white); }          /* requested */
+.brand-name .feed{ color: var(--white); } /* requested */
 .brand-name .loop{ color: var(--green); }
 
 .nav-links{
@@ -104,21 +99,19 @@ img{ max-width: 100%; display: block; }
 
 .nav-links a{
   color: rgba(255,255,255,0.82);
-  font-weight: 600;
+  font-weight: 650;
   font-size: 15px;
   padding: 10px 10px;
   border-radius: 12px;
   transition: background 0.15s ease, color 0.15s ease;
 }
-
 .nav-links a:hover{
   color: var(--white);
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.10);
 }
-
 .nav-links a.active{
   color: var(--white);
-  background: rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.12);
 }
 
 .nav-cta{
@@ -126,32 +119,23 @@ img{ max-width: 100%; display: block; }
   color: var(--white) !important;
   padding: 10px 14px !important;
   border-radius: 999px !important;
-  box-shadow: 0 10px 24px rgba(99,168,12,0.25);
+  box-shadow: 0 12px 26px rgba(99,168,12,0.22);
 }
-
-.nav-cta:hover{
-  background: var(--green-dark);
-}
+.nav-cta:hover{ background: var(--green-dark); }
 
 /* Mobile */
 .menu-btn{
   display: none;
-  border: 1px solid rgba(255,255,255,0.20);
-  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.08);
   color: var(--white);
   border-radius: 12px;
   padding: 10px 12px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-.mobile-panel{
-  display: none;
-  padding-bottom: 14px;
-}
-
-.mobile-panel.show{
-  display: block;
-}
+.mobile-panel{ display:none; padding-bottom: 14px; }
+.mobile-panel.show{ display:block; }
 
 .mobile-links{
   display:flex;
@@ -159,24 +143,18 @@ img{ max-width: 100%; display: block; }
   gap: 8px;
   padding: 12px;
   border-radius: 16px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.18);
+  border: 1px solid var(--border-soft);
 }
-
 .mobile-links a{
-  color: rgba(255,255,255,0.86);
-  font-weight: 650;
+  color: rgba(255,255,255,0.88);
+  font-weight: 700;
   padding: 10px 12px;
   border-radius: 12px;
 }
+.mobile-links a:hover{ background: rgba(255,255,255,0.10); }
 
-.mobile-links a:hover{
-  background: rgba(255,255,255,0.08);
-}
-
-/* -----------------------------
-   Hero
------------------------------- */
+/* Hero */
 .hero{
   padding: 34px 0 18px;
 }
@@ -188,20 +166,18 @@ img{ max-width: 100%; display: block; }
   align-items: start;
 }
 
-.hero-card{
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+/* Panels instead of white cards */
+.hero-card,
+.card{
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 26px;
 }
 
-.hero-card--econ{
-  padding: 24px;
-}
-
 .kicker{
-  color: var(--green);
+  color: rgba(255,255,255,0.72);
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -214,34 +190,22 @@ img{ max-width: 100%; display: block; }
   font-size: 56px;
   line-height: 1.05;
   letter-spacing: -1.2px;
-}
-
-.h2{
-  margin: 0 0 14px;
-  font-size: 22px;
-  letter-spacing: -0.2px;
+  color: var(--white);
 }
 
 .lead{
   margin: 0;
   font-size: 18px;
   line-height: 1.65;
-  color: rgba(31,35,40,0.80);
-  max-width: 46ch;
+  color: var(--muted);
+  max-width: 50ch;
 }
 
 .body{
   margin: 0;
   font-size: 16px;
   line-height: 1.65;
-  color: rgba(31,35,40,0.76);
-}
-
-.btn-row{
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 18px;
+  color: rgba(255,255,255,0.78);
 }
 
 .btn{
@@ -251,12 +215,11 @@ img{ max-width: 100%; display: block; }
   gap: 8px;
   padding: 12px 16px;
   border-radius: 14px;
-  font-weight: 800;
+  font-weight: 850;
   font-size: 15px;
   border: 1px solid transparent;
   transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
 }
-
 .btn:active{ transform: translateY(1px); }
 
 .btn-primary{
@@ -264,38 +227,36 @@ img{ max-width: 100%; display: block; }
   color: var(--white);
   box-shadow: 0 12px 26px rgba(99,168,12,0.22);
 }
-
 .btn-primary:hover{ background: var(--green-dark); }
 
 .btn-ghost{
-  background: rgba(255,255,255,0.60);
-  border-color: rgba(0,0,0,0.10);
-  color: rgba(31,35,40,0.90);
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.16);
+  color: rgba(255,255,255,0.92);
 }
-
 .btn-ghost:hover{
-  background: rgba(255,255,255,0.78);
-  border-color: rgba(0,0,0,0.14);
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.20);
 }
 
 .hr{
   height: 1px;
-  background: rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.12);
   margin: 18px 0;
 }
 
-/* Subheaders: make them clearly NOT body text */
+/* Subheaders: bold + clear */
 .subhead{
   margin-top: 10px;
   margin-bottom: 8px;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 0.08em;
+  font-weight: 950;
+  font-size: 13px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(31,35,40,0.88);
+  color: rgba(255,255,255,0.88);
 }
 
-/* Economics list (fixes “right side looks bad”) */
+/* Right-side economics list */
 .stat-list{
   display:flex;
   flex-direction: column;
@@ -306,46 +267,32 @@ img{ max-width: 100%; display: block; }
 .stat-row{
   padding: 14px 14px;
   border-radius: 16px;
-  background: rgba(255,255,255,0.70);
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-.stat-top{
-  display:flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
 }
 
 .stat-label{
   font-weight: 850;
   font-size: 14px;
-  color: rgba(31,35,40,0.88);
+  color: rgba(255,255,255,0.88);
 }
-
 .stat-value{
   font-weight: 950;
   font-size: 15px;
-  color: rgba(31,35,40,0.92);
+  color: rgba(255,255,255,0.92);
   white-space: nowrap;
 }
-
 .stat-note{
   margin-top: 6px;
   font-size: 14px;
   line-height: 1.5;
-  color: rgba(31,35,40,0.68);
+  color: rgba(255,255,255,0.70);
 }
 
-/* -----------------------------
-   Sections
------------------------------- */
-.section{
+/* Sections */
+.section,
+.section-tight{
   padding: 18px 0;
-}
-
-.section-last{
-  padding-bottom: 46px; /* fixes bottom spacing weirdness */
 }
 
 .grid-2{
@@ -354,44 +301,28 @@ img{ max-width: 100%; display: block; }
   gap: 18px;
 }
 
-.card{
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 22px;
-}
-
-.h3{
+.card h2{
   margin: 0 0 10px;
   font-size: 22px;
   letter-spacing: -0.2px;
+  color: var(--white);
 }
 
-.card-cta{
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+.card p{
+  margin: 0;
+  color: rgba(255,255,255,0.76);
+  line-height: 1.65;
 }
 
-.cta-left{ flex: 1; }
-.cta-right{ flex: 0; }
-
-/* -----------------------------
-   Footer
------------------------------- */
+/* Footer */
 .footer{
   padding: 18px 0 28px;
 }
-
 .footer .small{
   color: rgba(255,255,255,0.72);
 }
 
-/* -----------------------------
-   Responsive
------------------------------- */
+/* Responsive */
 @media (max-width: 980px){
   .h1{ font-size: 48px; }
   .hero-grid{ grid-template-columns: 1fr; }
@@ -403,11 +334,10 @@ img{ max-width: 100%; display: block; }
   .menu-btn{ display:inline-flex; }
   .brand{ min-width: unset; }
   .grid-2{ grid-template-columns: 1fr; }
-  .card-cta{ flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 520px){
   .container{ width: min(var(--container), calc(100% - 28px)); }
   .h1{ font-size: 40px; }
-  .hero-card{ padding: 20px; }
+  .hero-card, .card{ padding: 20px; }
 }
