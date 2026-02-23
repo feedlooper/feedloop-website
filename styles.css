@@ -334,3 +334,23 @@ img{max-width:100%;display:block;}
   .team-row{flex-direction:column;}
   .team-photo img{width:100%;height:auto;}
 }
+/* =========================
+   NAV LOGO SIZE FIX
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  height: 38px;      /* adjust 32–44px if needed */
+  width: auto;
+  max-height: 38px;
+  object-fit: contain;
+}
+
+.nav img {
+  width: auto !important;
+}
