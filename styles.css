@@ -287,21 +287,12 @@ img{max-width:100%;display:block;}
 }
 
 /* ---------------- TEAM ---------------- */
-/* ---------------- TEAM ---------------- */
 
 .team-row{
   display:flex;
   gap:32px;
-  margin:28px 0;              /* controlled vertical spacing */
+  margin-bottom:40px;
   align-items:flex-start;
-}
-
-.team-row:first-child{
-  margin-top:0;
-}
-
-.team-row:last-child{
-  margin-bottom:0;
 }
 
 .team-photo{
